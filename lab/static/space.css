@@ -1,0 +1,32 @@
+.cs-widget {min-width:0;color:var(--ink,#20242a)}
+.cs-head {display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:0 0 12px}
+.cs-head h3,.cs-selected {margin:0;font-size:14px;font-weight:640}
+.cs-head p,.cs-action,.cs-note,.cs-figure figcaption {margin:4px 0 0;color:var(--muted,#616974);font-size:12px;line-height:1.55}
+.cs-example {flex:none;background:#eff1f3;padding:2px 7px;color:#535e69;border-radius:4px;font-size:11px}
+.cs-layout {display:grid;grid-template-columns:minmax(220px,1.65fr) minmax(145px,1fr);align-items:center;gap:clamp(12px,2.5vw,28px)}
+.cs-figure {margin:0;min-width:0}
+.cs-map {display:block;width:100%;max-height:245px;font-family:inherit;overflow:visible}
+.cs-table {fill:#f8f9fa;stroke:#d9dfe4}
+.cs-map-label,.cs-map-side {font-size:13px;fill:#56616c}
+.cs-map-side {font-size:12px}
+.cs-field {fill:#fff;stroke:#cbd2d7}
+.cs-zone {cursor:pointer;outline:none}
+.cs-zone:hover .cs-field {fill:#f1f5f7;stroke:#8a98a2}
+.cs-zone[aria-checked="true"] .cs-field {fill:#eaf1f4;stroke:#486875;stroke-width:1.8}
+.cs-zone:focus-visible .cs-field {stroke:#255e9c;stroke-width:3;stroke-dasharray:5 2}
+.cs-loc {font-weight:630;font-size:15px;fill:#29343c}
+.cs-quota {fill:#57636c;font-size:12px}
+.cs-cube {fill:none;stroke:#426372;stroke-width:1.2;opacity:0}
+.cs-zone[aria-checked="true"] .cs-cube {opacity:1}
+.cs-tray {fill:#f9f1e5;stroke:#a4824d}
+.cs-tray-in {fill:none;stroke:#cdbb99;stroke-dasharray:3 3}
+.cs-tray-name {font-size:13px;fill:#735c37;text-anchor:middle}
+.cs-base-mark {fill:none;stroke:#677580;stroke-width:1.3}
+.cs-info {min-width:0}
+.cs-info dl {display:flex;margin:12px 0 0;gap:24px;font-variant-numeric:tabular-nums}
+.cs-info dl>div {display:grid;gap:2px}
+.cs-info dt,.cs-totals span {font-size:12px;color:var(--muted,#616974)}
+.cs-info dd {margin:0;font-size:17px;font-weight:620}
+.cs-totals {display:flex;gap:5px 14px;align-items:baseline;flex-wrap:wrap;border-top:1px solid var(--line,#e0e3e7);margin-top:14px;padding-top:11px;font-size:13px}
+@media(max-width:650px) {.cs-layout{grid-template-columns:1fr;gap:12px}.cs-info dl{gap:16px;margin-top:6px}.cs-info dl>div{display:flex;align-items:baseline;gap:5px}.cs-info dd{font-size:13px}}
+@media(prefers-contrast:more) {.cs-field,.cs-tray,.cs-table{stroke:#454e57}.cs-zone[aria-checked="true"] .cs-field{stroke:#182835;stroke-width:3}}

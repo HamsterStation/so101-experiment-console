@@ -1,0 +1,19 @@
+.dataset-nav{display:flex;gap:18px;overflow-x:auto;margin:-4px 0 18px;border-bottom:1px solid var(--line)}
+.dataset-nav a{font-size:13px;color:var(--muted);white-space:nowrap;padding:5px 1px 9px;border-bottom:2px solid transparent}
+.dataset-nav a[aria-current="page"]{border-color:var(--accent);color:var(--ink);font-weight:650}
+.ds-foot,.ds-text,.ds-rule p,.ds-ref p,.ds-flow p,.model-paths p,.ds-details p,.hub-check p{font-size:13px;color:var(--muted);line-height:1.65}
+.ds-foot{margin-top:8px}.ds-text{margin-top:9px}
+.ds-rule,.ds-ref{border-top:1px solid var(--line);margin:15px 0 0;padding:12px 0 0}
+.ds-rule strong,.ds-ref strong{font-size:13px}
+.ds-rule p,.ds-ref p{margin-top:4px}
+.ds-toolbar,.ds-inputrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:10px}
+.ds-inputrow{margin:0;flex-wrap:nowrap}.ds-inputrow input{margin:0}.ds-inputrow button{flex:none}
+#hub-inspect label{margin:10px 0 4px}.ds-foot a,.ds-toolbar a:not(.soft),.ds-flow a,.model-paths a,.hub-check a{color:#405b74;text-decoration:underline;text-underline-offset:3px;font-size:12px}
+.ds-details summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;font-weight:620}.ds-details summary span{font-weight:400;color:var(--muted);font-size:12px}
+.ds-details summary::after{content:'＋'}.ds-details[open] summary::after{content:'−'}
+.ds-details p{margin:12px 0}.ds-scroll{max-height:260px;overflow:auto}
+.ds-table{width:100%;border-collapse:collapse;font-size:12px;text-align:left;font-variant-numeric:tabular-nums}.ds-table th,.ds-table td{padding:6px;border-bottom:1px solid var(--line)}.ds-table th{position:sticky;top:0;background:var(--light)}
+.ds-flow{padding-left:20px;margin:12px 0 0}.ds-flow li{padding:0 0 10px 4px}.ds-flow li:last-child{padding-bottom:0}.ds-flow li+li{padding-top:9px;border-top:1px solid var(--line)}
+.model-paths{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}.model-paths>div{border-top:1px solid var(--line);padding:12px 0 0}.model-paths p{margin:5px 0 10px}
+.hub-check{margin-top:12px;padding:12px;background:var(--light);border-radius:5px;overflow-wrap:anywhere}
+@media(max-width:600px){.model-paths{grid-template-columns:1fr}.dataset-nav{gap:13px}.dataset-nav a{font-size:12px}.ds-details summary{font-size:13px}}
